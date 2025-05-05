@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fauna Kitchen - Worldwide Cuisines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<main>
+  <video class="background-video" autoplay muted loop>
+    <source src="MainVideo.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+  </video>
+
+  <header class="top-header"> 
+    <div class="name"><h1>Fauna Kitchen</h1></div>
+    <nav class="nav-container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Chefs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero-section">
+    <div class="hero-content-wrapper">
+      <div class="hero-left">
+        <h2>World's Flavours, One Kitchen</h2>
+        <p>Fauna Kitchen brings you a curated selection of dishes from across the globe — from rich Italian pastas and bold Indian spices to delicate Japanese flavors and hearty Middle Eastern classics. Experience culinary traditions reimagined with fresh ingredients and artisan care, all in one place.</p>
+        <button class="shop-button" onclick="location.href='about.html'">Explore more</button>
+      </div>
+
+      <div class="timing-container">
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday: 10 AM - 10 PM</p>
+        <p>Saturday - Sunday: 11 AM - 11 PM</p>
+        <button class="reserve-button" onclick="location.href='reservations.html'">Reserve a Table</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <section class="top-dishes">
+    <h3>Top Worldwide Dishes</h3>
+    <div class="products">
+      <div class="item">
+        <img src="Rendang.jpg" alt="Rendang">
+        <p><strong>Indonesia</strong><br>$19.99 - Slow-cooked beef simmered in coconut milk and spices until tender and deeply flavorful. A rich, earthy dish with layers of complexity.</p>
+      </div>
     
+      <div class="item">
+        <img src="Shakshuka.webp" alt="Shakshuka">
+        <p><strong>North Africa</strong><br>$13.99 - Poached eggs in a spicy tomato and pepper sauce — vibrant, vegetarian, and increasingly popular worldwide.</p>
+      </div>
+    
+      <div class="item">
+        <img src="ChurasscoWithChimichurri.jpg" alt="Churrasco with Chimichurri">
+        <p><strong>Argentina</strong><br>$24.99 - Grilled steak served with a bold, garlicky herb sauce. A carnivore's delight and an iconic Latin American favorite.</p>
+      </div>
+    
+      <div class="item">
+        <img src="Ceviche_.webp" alt="Ceviche">
+        <p><strong>Peru</strong><br>$17.99 - Fresh raw fish cured in citrus juices with onions, cilantro, and chili — light, zesty, and refreshing.</p>
+      </div>
+    
+      <div class="item">
+        <img src="cottagePie.avif" alt="Cottage Pie">
+        <p><strong>United Kingdom</strong><br>$15.99 - Ground beef in savory gravy topped with creamy mashed potatoes and baked — hearty and nostalgic.</p>
+      </div>
+    
+      <div class="item">
+        <img src="Ratatouille.webp" alt="Ratatouille">
+        <p><strong>France</strong><br>$14.49 - A beautifully layered vegetable dish in a tomato-based sauce — perfect as a vegan or vegetarian option that’s also gourmet.</p>
+      </div>
+    </div>
+  
+    <button class="view-all" onclick="location.href='menu.html'">View full Menu</button>
+  </section>
+
+  <section class="chef-info">
+    <h3>Meet Our Chefs</h3>
+    <div class="chef-container">
+  
+      <div class="chef-card">
+        <img src="Chef 1.jpg" alt="Chef Maria Gonzalez" class="chef-image">
+        <div class="chef-description">
+          <h4>Chef Maria Gonzalez</h4>
+          <p>With over 25 years of culinary experience, Chef Maria brings a wealth of knowledge and passion for global cuisines. Her travels have inspired her to create a menu that celebrates the diversity of flavors from around the world.</p>
+        </div>
+      </div>
+  
+      <div class="chef-card">
+        <img src="chef 2.jpg" alt="Chef Daniel Lee" class="chef-image">
+        <div class="chef-description">
+          <h4>Chef Daniel Lee</h4>
+          <p>With more than 32 years in the kitchen, Chef Daniel combines classical training with a love for bold, modern flavors. Influenced by his upbringing in Seoul and years spent cooking across Europe and the Americas, his menu is a vibrant celebration of cross-cultural culinary fusion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="news-section">
+    <div class="news-title">IN THE NEWS</div>
+    <div class="news-box">
+      <div class="news-item">
+        <p>News write-ups offer a great way to let clients know about new products and services, events, awards, and more.</p>
+        <strong>– THE FOOD HUB</strong>
+      </div>
+      <div class="news-item">
+        <p>News write-ups offer a great way to let clients know about new products and services, events, awards, and more.</p>
+        <strong>– ONLINE CUPBOARD</strong>
+      </div>
+      <div class="news-item">
+        <p>News write-ups offer a great way to let clients know about new products and services, events, awards, and more.</p>
+        <strong>– EAT THE WORLD</strong>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-info">
+      <p>© 2025 Fauna Kitchen | Follow us on social media</p>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
