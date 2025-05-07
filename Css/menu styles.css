@@ -30,7 +30,7 @@
     ::-webkit-scrollbar-corner {
     background: var(--dark);
     }
-    
+
     body{
     margin:0;
     overflow-x:hidden !important;
