@@ -118,17 +118,6 @@
     }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*STYLES FOR SHOP PAGE*/
-    /*LIST*/
     .default-hero-banner{
     width:100%;
     background-image:url("https://i.ibb.co/DgRMWdv/default-bg.jpg");
@@ -143,10 +132,6 @@
     font-size:1.6em;
     }
     
-    
-    
-    
-    /*LIST SECTION*/
     .list-section{
     width:100%;
     display:flex;
@@ -264,7 +249,6 @@
     left:0%;
     }
     
-    
     @media (max-width:920px){
     .list-section{
     display:block;
@@ -291,25 +275,6 @@
     margin:10px 0;
     }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     /*FOOTER*/
     .footer{
