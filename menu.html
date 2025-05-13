@@ -12,35 +12,39 @@
     </head>
     <body>
     <div class="default-hero-banner">
-    <nav class="nav-container">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="orders.html">Orders</a></li>
-      </ul>
-    </nav>
-    <section>
-    Menu Section
-    </section> 
+        <nav class="nav-container">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="reservations.html">Reservations</a></li>
+               <li><a href="orders.html">Orders</a></li>
+            </ul>
+        </nav>
+        <section>
+        Menu Section
+        </section> 
+    </div>
+    <div class="cart" id="cart">
+        <h2>Cart</h2>
+        <div id="cart-items"></div>
     </div>
     <div class="list-section">
-     <div class="left-section">
-     <section class="column-1">
-     <h1>Categories</h1>
-        <a href="menu.html">Deals</a>
-        <a href="menu starters.html">Starters</a>
-        <a href="menu maincourse.html">Main course</a>
-        <a href="menu sides.html">Sides</a>
-        <a href="menu dessert.html">Desserts</a>
-     </section>
-     <section class="column-2">
-     <h1>Beverages</h1>
-         <a href="menu cold beverages.html">Cold beverages</a>
-         <a href="menu hot beverages.html">Hot beverages</a>
-         <a href="menu mocktails.html">Mocktails</a>
-     </section>
-     </div>
+    <div class="left-section">
+        <section class="column-1">
+            <h1>Categories</h1>
+            <a href="menu.html">Deals</a>
+            <a href="menu starters.html">Starters</a>
+            <a href="menu maincourse.html">Main course</a>
+            <a href="menu sides.html">Sides</a>
+            <a href="menu dessert.html">Desserts</a>
+        </section>
+        <section class="column-2">
+            <h1>Beverages</h1>
+            <a href="menu cold beverages.html">Cold beverages</a>
+            <a href="menu hot beverages.html">Hot beverages</a>
+            <a href="menu mocktails.html">Mocktails</a>
+        </section>
+    </div>
      <div class="right-section">
      <div class="list-cards">
      <div class="list-card">
@@ -49,12 +53,14 @@
      <p><b>International Feast Platter</b></p>
      <p>A global culinary journey featuring flavors from Korea, Spain, and the Caribbean.</p>
      <span class="price">$ 18.99</span>
+     <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
      </section>
      <section>
      <img src="Images/deal 1.png" alt="">
      <span class="list-category">
      <p>Patatas Bravas, Beef Bulgogi with Rice, and Mango Lassi Spritzer.</p>
      </span>
+     <button class="add-to-cart" onclick="addToCart(firewal)">Add to Cart</button>
      </section>
      </div>
 
@@ -64,6 +70,7 @@
      <p><b>Veggie Lovers</b></p>
      <p>A veggie-filled feast with bold flavors from Pakistan, France, and the tropics.</p>
      <span class="price">$ 16.50</span>
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
      </section>
      <section>
      <img src="Images/deal 2.png" alt="">
@@ -79,6 +86,8 @@
     <p><b>Spicy & Savory</b></p>
     <p>A spicy selection of Korean and Thai street food favorites.</p>
     <span class="price">$ 17.99</span>
+         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
     </section>
     <section>
     <img src="Images/deal 3.png" alt="">
@@ -94,6 +103,8 @@
     <p><b>Classic Comfort</b></p>
     <p>Warm, hearty classics to satisfy your comfort food cravings.</p>
     <span class="price">$ 15.99</span>
+         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
     </section>
     <section>
     <img src="Images/deal 4.png" alt="">
@@ -109,6 +120,8 @@
     <p><b>Sweet & Savory</b></p>
     <p>A perfect blend of savory and sweet flavors from around the world.</p>
     <span class="price">$ 19.50</span>
+         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
     </section>
     <section>
     <img src="Images/deal 5.png" alt="">
@@ -124,6 +137,8 @@
     <p><b>Chef’s Signature</b></p>
     <p>A curated selection of the chef’s top picks for a gourmet experience.</p>
     <span class="price">$ 21.99</span>
+         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+
     </section>
     <section>
     <img src="Images/deal 6.png" alt="">
@@ -166,3 +181,5 @@
       </div>
       
   <a href="#" id="roll_back" class="animate"><i class="fa fa-angle-up"></i></a>
+
+  <script src="js/menu script.js" crossorigin="anonymous"></script>
