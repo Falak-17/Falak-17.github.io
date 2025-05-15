@@ -2,32 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="Css/menu styles.css">
     
     </head>
-    <body>
+    <body> 
     <div class="default-hero-banner">
+        <img src="Images/background.webp" alt="Logo" class="logo">
         <nav class="nav-container">
             <ul>
                <li><a href="index.html">Home</a></li>
                <li><a href="about.html">About Us</a></li>
                <li><a href="reservations.html">Reservations</a></li>
-               <li><a href="orders.html">Orders</a></li>
+               <li><a href="location.html">Location</a></li>
             </ul>
         </nav>
         <section>
-        Menu Section
+        <h1>Menu Section</h1>
         </section> 
     </div>
-    <div class="cart" id="cart">
-        <h2>Cart</h2>
-        <div id="cart-items"></div>
+    <section id="cartArea" class="cart-wrapper">
+    <div class="cart-icon" onclick="toggleCart()">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
     </div>
+    <div class="cart-dropdown" id="cartList" style="display: none;">
+    <h2>Cart</h2>
+    <div id="cartItems">Your cart is empty.</div>
+    <div id="totalPrice">Total: $0.00</div>
+       <button id="checkoutButton" onclick="checkout()">Proceed to payment</button>
+    </div>
+    </section>
     <div class="list-section">
     <div class="left-section">
         <section class="column-1">
@@ -53,14 +59,13 @@
      <p><b>International Feast Platter</b></p>
      <p>A global culinary journey featuring flavors from Korea, Spain, and the Caribbean.</p>
      <span class="price">$ 18.99</span>
-     <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Feast Platter', 18.99)">Add to Cart</button>
      </section>
      <section>
      <img src="Images/deal 1.png" alt="">
      <span class="list-category">
      <p>Patatas Bravas, Beef Bulgogi with Rice, and Mango Lassi Spritzer.</p>
      </span>
-     <button class="add-to-cart" onclick="addToCart(firewal)">Add to Cart</button>
      </section>
      </div>
 
@@ -70,7 +75,7 @@
      <p><b>Veggie Lovers</b></p>
      <p>A veggie-filled feast with bold flavors from Pakistan, France, and the tropics.</p>
      <span class="price">$ 16.50</span>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        <button class="add-to-cart" onclick="addToCart('Veggie Lovers', 16.50)">Add to Cart</button>
      </section>
      <section>
      <img src="Images/deal 2.png" alt="">
@@ -86,8 +91,7 @@
     <p><b>Spicy & Savory</b></p>
     <p>A spicy selection of Korean and Thai street food favorites.</p>
     <span class="price">$ 17.99</span>
-         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-
+        <button class="add-to-cart" onclick="addToCart('Spicy & Savory', 17.99)">Add to Cart</button>
     </section>
     <section>
     <img src="Images/deal 3.png" alt="">
@@ -103,8 +107,7 @@
     <p><b>Classic Comfort</b></p>
     <p>Warm, hearty classics to satisfy your comfort food cravings.</p>
     <span class="price">$ 15.99</span>
-         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-
+        <button class="add-to-cart" onclick="addToCart('Classic confort', 15.99)">Add to Cart</button>
     </section>
     <section>
     <img src="Images/deal 4.png" alt="">
@@ -120,8 +123,7 @@
     <p><b>Sweet & Savory</b></p>
     <p>A perfect blend of savory and sweet flavors from around the world.</p>
     <span class="price">$ 19.50</span>
-         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-
+        <button class="add-to-cart" onclick="addToCart('Sweet & Savory', 19.50)">Add to Cart</button>
     </section>
     <section>
     <img src="Images/deal 5.png" alt="">
@@ -137,8 +139,7 @@
     <p><b>Chef’s Signature</b></p>
     <p>A curated selection of the chef’s top picks for a gourmet experience.</p>
     <span class="price">$ 21.99</span>
-         <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-
+        <button class="add-to-cart" onclick="addToCart('Chefs signature', 21.99)">Add to Cart</button>
     </section>
     <section>
     <img src="Images/deal 6.png" alt="">
@@ -161,7 +162,7 @@
       <h3>LINKS</h3>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="contact us.html">Contact Us</a>
+      <a href="location.html">Location</a>
       </section>
       <section>
       <h3>OTHER</h3>
@@ -181,5 +182,5 @@
       </div>
       
   <a href="#" id="roll_back" class="animate"><i class="fa fa-angle-up"></i></a>
-
-  <script src="js/menu script.js" crossorigin="anonymous"></script>
+  <script src="js/menu script.js"></script>
+  <script src="js/Cart.js"></script>
